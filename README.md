@@ -1,21 +1,16 @@
-# Uoion Apss20 : This is a springboot java application used for docker container testing.
+# Uoion Apps20 : This is a springboot java application used for docker container testing.
 
 Complete Build & Run Commands:
 
-# Verify Java
-java -version
+Verify Java: java -version
 
-# Verify Maven
-mvn -version
+Verify Maven: mvn -version
 
-# Build the application
-mvn clean package
+Build the application: mvn clean package
 
-# Run the application
-mvn spring-boot:run
+Run the application: mvn spring-boot:run
 
-# Or run the packaged JAR
-java -jar target/uoion-apps20-1.0.0.jar
+Or run the packaged JAR: java -jar target/uoion-apps20-1.0.0.jar
 ---------------------------------------------------------------------
 Deploy on an EC2 Instance:
 
