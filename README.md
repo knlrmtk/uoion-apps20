@@ -1,7 +1,7 @@
 # Uoion Apps20 : This is a springboot java application used for docker container testing.
 
 Complete Build & Run Commands:
-
+------------------------------
 Verify Java: java -version
 
 Verify Maven: mvn -version
@@ -11,8 +11,12 @@ Build the application: mvn clean package
 Run the application: mvn spring-boot:run
 or
 Run the packaged JAR: java -jar target/uoion-apps20-1.0.0.jar
----------------------------------------------------------------------
+
+Access the application: http://localhost:8080/
+
+
 Deploy on an EC2 Instance:
+------------------------------
 
 Install Java 21 on the EC2 instance.
 
