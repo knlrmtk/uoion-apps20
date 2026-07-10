@@ -9,8 +9,8 @@ Verify Maven: mvn -version
 Build the application: mvn clean package
 
 Run the application: mvn spring-boot:run
-
-Or run the packaged JAR: java -jar target/uoion-apps20-1.0.0.jar
+or
+Run the packaged JAR: java -jar target/uoion-apps20-1.0.0.jar
 ---------------------------------------------------------------------
 Deploy on an EC2 Instance:
 
