@@ -2,17 +2,29 @@
 
 Complete Build & Run Commands:
 ------------------------------
-Verify Java:    java -version
+Verify Java:
 
-Verify Maven:   mvn -version
+    java -version
 
-Build the application:      mvn clean package
+Verify Maven:
 
-Run the application:        mvn spring-boot:run
+    mvn -version
 
-Run the packaged JAR:       java -jar target/uoion-apps20-1.0.0.jar
+Build the application:
 
-Access the application: http://localhost:8080/
+    mvn clean package
+
+Run the application:
+
+    mvn spring-boot:run
+
+Run the packaged JAR:
+
+    java -jar target/uoion-apps20-1.0.0.jar
+
+Access the application:
+
+    http://localhost:8080/
 
 
 Deploy on an EC2 Instance:
@@ -21,13 +33,17 @@ Deploy on an EC2 Instance:
 Install Java 21 on the EC2 instance.
 
 Copy the JAR file:
-scp target/uoion-apps20-1.0.0.jar ec2-user@EC2-IP:/home/ec2-user/
+
+    scp target/uoion-apps20-1.0.0.jar ec2-user@EC2-IP:/home/ec2-user/
 
 Run the application:
-java -jar uoion-apps20-1.0.0.jar
 
-Ensure the EC2 security group allows inbound traffic on port 8080.
+    java -jar uoion-apps20-1.0.0.jar
 
-Access the application: http://EC2-Public-IP:8080/
+    Ensure the EC2 security group allows inbound traffic on port 8080.
+
+Access the application:
+
+    http://EC2-Public-IP:8080/
 
 This project is suitable as a basic Spring Boot starter and can later be extended with features such as Spring Boot Actuator, Prometheus metrics, Docker support, and deployment through a Jenkins CI/CD pipeline.
